@@ -8,13 +8,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-
+import android.widget.CheckBox;
 public class MainActivity2 extends AppCompatActivity {
 
     private EditText Nombre;
     private EditText apellido;
     private EditText cargo;
     private EditText sueldoB;
+
+    private CheckBox descuento, salud, pension;
     private EditText diasLab;
 
     @SuppressLint("MissingInflatedId")
@@ -28,6 +30,10 @@ public class MainActivity2 extends AppCompatActivity {
         cargo = findViewById(R.id.cargo);
         sueldoB = findViewById(R.id.sueldoB);
         diasLab = findViewById(R.id.diasLab);
+        descuento = findViewById(R.id.descuento);
+        salud = findViewById(R.id.salud);
+        pension = findViewById(R.id.pension);
+
 
         Button btnCalcular = findViewById(R.id.btnCalcular);
         btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -37,18 +43,43 @@ public class MainActivity2 extends AppCompatActivity {
                 String Apellido = apellido.getText().toString();
                 String Cargo = cargo.getText().toString();
                 String SueldoB = sueldoB.getText().toString();
+                int SueldoB1 = Integer.parseInt(SueldoB);
                 String DiasLab = diasLab.getText().toString();
-                // Aquí abres la otra actividad
-                Intent intent = new Intent(MainActivity2.this, MainActivity3.class);
+                int DiasLab1 = Integer.parseInt(DiasLab);
+                Boolean Descuento = descuento.isChecked();
+                Boolean Salud = salud.isChecked();
+                Boolean Pension = pension.isChecked();
+                int totalDescuentos= 0;
 
-                Intent.putExtra("nombre", nombre);
-                Intent.putExtra("Apellido", Apellido);
-                Intent.putExtra("Cargo", Cargo);
-                Intent.putExtra("SueldoB", SueldoB);
-                Intent.putExtra("DiasLab", DiasLab);
-                startActivity(intent);
+                if (Descuento==true){
+                    totalDescuentos+=SueldoB1*0.03;
+                }
+                if (Salud==true){
+                    totalDescuentos+=SueldoB1*0.04;
+                }
+                if (Pension==true){
+                    totalDescuentos+=SueldoB1*0.04;
+                }
+
+                int Resultado= SueldoB1-totalDescuentos;
+
+                int valorDia= SueldoB1/30;
+
+                Intent datos = new Intent(MainActivity2.this, MainActivity3.class);
+
+
+                datos.putExtra("nombre", nombre);
+                datos.putExtra("Apellido", Apellido);
+                datos.putExtra("Cargo", Cargo);
+                datos.putExtra("SueldoB1", SueldoB1);
+                datos.putExtra("DiasLab1", DiasLab1);
+                datos.putExtra("Resultado", Resultado);
+                datos.putExtra("valorDia", valorDia);
+                startActivity(datos);
             }
         });
+
+
 
 
 

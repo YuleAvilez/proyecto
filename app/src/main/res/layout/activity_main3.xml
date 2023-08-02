@@ -6,13 +6,176 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="156dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginTop="856dp"
+        android:backgroundTint="#720DFF"
+        android:text="SALIR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="496dp"
+        android:text="dias lab:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="652dp"
+        android:text="Sueldo Neto:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="736dp"
+        android:text="Valor por dia:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="428dp"
+        android:text="sueldo base:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="356dp"
+        android:text="cargo:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="272dp"
+        android:text="apellidos:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="176dp"
+        android:text="nombres:"
+        android:textColor="#9C27B0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Apellido"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="272dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Cargo"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="352dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/SueldoB"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="428dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DiasLab"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="500dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Resultado"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="644dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/valorDia"
+        android:layout_width="202dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="728dp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/nombre"
         android:layout_width="202dp"
         android:layout_height="51dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="164dp"
-        android:textColor="#9C27B0"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="176dp"
+        android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,7 +193,15 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.766"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="79dp"
+        android:layout_height="95dp"
+        app:srcCompat="@drawable/salario"
+        tools:layout_editor_absoluteX="444dp"
+        tools:layout_editor_absoluteY="16dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
